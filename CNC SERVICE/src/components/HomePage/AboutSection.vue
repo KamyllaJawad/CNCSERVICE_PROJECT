@@ -4,12 +4,16 @@
           <div class="row gy-4 gy-md-0">
             <div
               class="col-md-6 text-center text-md-start d-flex d-sm-flex d-md-flex justify-content-center align-items-center justify-content-md-start align-items-md-center justify-content-xl-center">
-              <div style="max-width: 350px;">
+              <div style="max-width: 600px;">
                 <h2 class="text-uppercase fw-bold">A cnc service...</h2>
-                <p class="my-3">Dispõe de uma ampla linha de máquinas operatrizes para o setor metal mecânico, como centros
+                <p class="my-3 whoweare">
+                  Somos uma empresa especializada em assistência técnica de máquinas CNC, focada em manter suas operações funcionando com máxima eficiência e precisão. Oferecemos serviços completos de manutenção, reparo e calibração, com uma equipe de técnicos qualificados pronta para diagnosticar e resolver problemas rapidamente, minimizando o tempo de inatividade. Além disso, proporcionamos substituição de peças, atualizações de software e treinamento especializado para operadores, garantindo que suas máquinas operem de forma segura e eficaz. Nosso compromisso é assegurar que sua produção seja contínua e eficiente. Entre em contato conosco para descobrir como podemos ser seu parceiro confiável na manutenção de suas máquinas CNC.
+
+                  <!-- Dispõe de uma ampla linha de máquinas operatrizes para o setor metal mecânico, como centros
                   de usinagem, tornos, fresadoras e injetoras.<br><br>Situada em Joinville(SC), a CNC Service conta com
                   tecnologia avançada em sua instalação. São 580 m2 de área, laboratório para reparos de spindle e
-                  eletrônicos e chão de fábrica para manutenção e retrofitting de máquinas CNC e convencionais.</p>
+                  eletrônicos e chão de fábrica para manutenção e retrofitting de máquinas CNC e convencionais. -->
+                </p>
               </div>
             </div>
             <div class="col-md-6">
@@ -19,3 +23,10 @@
         </div>
       </section>
 </template>
+
+<style>
+  .whoweare {
+    font-size: 16px;
+    text-align: left;
+  };
+</style>

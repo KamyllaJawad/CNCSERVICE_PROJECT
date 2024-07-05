@@ -1,6 +1,6 @@
 <template>
-    <AboutSection />
     <HeroSection />
+    <AboutSection />
     <CustomersSection />
     <ServiceSection />
     <ContactSection />

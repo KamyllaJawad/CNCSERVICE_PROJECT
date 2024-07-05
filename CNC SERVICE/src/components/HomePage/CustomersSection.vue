@@ -32,14 +32,16 @@ export default {
           description: "Doosan é um conglomerado industrial sul coreano, suas atividades predominam na área de maquinário pesado e construção.",
           logoSrc: "Doosan-Logo.png",
           logoWidth: 206,
-          logoHeight: 54
+          logoHeight: 54,
+          url: "https://google.com"
         },
         {
           name: "HISION",
           description: "HISION é uma empresa líder na indústria de ferramentaria, com diversas bases de produção, incluindo instalações modernas.",
           logoSrc: "hision.jpg",
           logoWidth: 224,
-          logoHeight: 46
+          logoHeight: 46,
+          url: "https://tailwindcss.com/docs/guides/nextjs"
         },
         {
           name: "AMADA",
@@ -55,6 +57,7 @@ export default {
     showMore(index) {
       // Adicione o código para mostrar mais informações sobre a empresa, se necessário
       console.log("Saiba mais sobre a empresa:", this.companies[index].name);
+      window.open(this.companies[index].url);
     }
   }
 };
