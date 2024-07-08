@@ -1,16 +1,16 @@
 <template>
   <section id="carousel">
-  <div class="container">
+  
     <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="../../assets/cncService.png" class="d-block w-100" alt="...">
+            <img src="../../assets/cncService.png" class="" alt="...">
             <div class="carousel-caption d-none d-md-block">
-                <h5>First slide label</h5>
-                <p>Some representative placeholder content for the first slide.</p>
+                <h5>Bem vindo</h5>
+                <p>Maquinas industrias manutenção e assistência Tecnica.</p>
               </div>
           </div>
-          <div class="carousel-item">
+          <!-- <div class="carousel-item">
             <img src="../../assets/cncService.png" class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block">
                 <h5>First slide label</h5>
@@ -23,7 +23,7 @@
                 <h5>First slide label</h5>
                 <p>Some representative placeholder content for the first slide.</p>
               </div>
-          </div>
+          </div> -->
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -34,6 +34,6 @@
           <span class="visually-hidden">Next</span>
         </button>
       </div>
-  </div>
+  
 </section>
 </template>

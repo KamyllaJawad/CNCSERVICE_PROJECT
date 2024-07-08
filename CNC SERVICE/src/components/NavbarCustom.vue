@@ -79,12 +79,8 @@ export default {
 
       sections.forEach(section => {
         if (scrollPos >= section.offsetTop - 56 && scrollPos < section.offsetTop + section.offsetHeight) {
-          
             activeSection.value = section.id;
-          
           const activeLink = document.querySelector(`a[href="#${section.id}"]`);
-          
-          
             if (activeLink) {
               const linkRect = activeLink.getBoundingClientRect();
               underlineStyle.value = {
