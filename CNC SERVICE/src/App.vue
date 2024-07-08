@@ -27,4 +27,18 @@ export default {
   text-align: center;
   color: #2c3e50;
 }
+
+
+
+#home {
+  background-color: #f8f9fa;
+}
+
+#about {
+  background-color: #e9ecef;
+}
+
+#contact {
+  background-color: #dee2e6;
+}
 </style>

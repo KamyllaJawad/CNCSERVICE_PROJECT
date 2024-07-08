@@ -1,16 +1,17 @@
 <template>
+  <section id="carousel">
   <div class="container">
     <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="../../assets/_MG_9460.jpg" class="d-block w-100" alt="...">
+            <img src="../../assets/cncService.png" class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block">
                 <h5>First slide label</h5>
                 <p>Some representative placeholder content for the first slide.</p>
               </div>
           </div>
           <div class="carousel-item">
-            <img src="../../assets/_MG_9464.jpg" class="d-block w-100" alt="...">
+            <img src="../../assets/cncService.png" class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block">
                 <h5>First slide label</h5>
                 <p>Some representative placeholder content for the first slide.</p>
@@ -34,4 +35,5 @@
         </button>
       </div>
   </div>
+</section>
 </template>
