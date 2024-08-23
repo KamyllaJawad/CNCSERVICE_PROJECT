@@ -1,10 +1,6 @@
 <template>
   <nav class="navbar navbar-expand-lg fixed-top">
     <div class="container" id="navbar">
-      <!-- Logo centralizada à esquerda -->
-      <!-- <router-link class="navbar-brand" to="/">
-        <img src="@/assets/CNC.png" alt="Logo" height="60">
-      </router-link> -->
       <a href="#carousel" class="navbra-brand">
         <img src="@/assets/CNC.png" alt="Logo" height="60">
       </a>
@@ -20,31 +16,17 @@
         <ul class="navbar-nav">
           <!-- Tabs -->
           <li class="nav-item">
-            <!-- <router-link class="nav-link" to="/about">Sobre Nós</router-link> -->
+            
             <a class="nav-link" href="#about" :class="{ active: activeSection === 'about' }">Sobre Nós</a>
           </li>
           <li class="nav-item">
-            <!-- <router-link class="nav-link" to="/contact">Representações</router-link> -->
+            
             <a href="#customers" class="nav-link" :class="{ active:activeSection === 'customers' }">Represetações</a>
           </li>
           <li class="nav-item">
             <a href="#services" class="nav-link" :class="{ active:activeSection === 'services' }">Produtos</a>
             <!-- Serviços (Dropdown) -->
           </li>
-          <!-- <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-              aria-expanded="false">
-              Serviços
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><router-link class="dropdown-item" to="/products">Produtos</router-link></li>
-              <li><a class="dropdown-item" href="#services">Assistência Técnica</a></li>
-              <li><a class="dropdown-item" href="#">Automação Industrial</a></li>
-              <li><a class="dropdown-item" href="#">Reforma e Retrofitting</a></li>
-              <li><a class="dropdown-item" href="#">Manutenção Corretiva</a></li>
-            </ul>
-          </li> -->
-          
           <li class="nav-item">
             <!-- <router-link class="nav-link" to="/contact">Contato</router-link> -->
              <a href="#contact" class="nav-link">Contato</a>
@@ -81,11 +63,16 @@ export default {
         if (scrollPos >= section.offsetTop - 56 && scrollPos < section.offsetTop + section.offsetHeight) {
             activeSection.value = section.id;
           const activeLink = document.querySelector(`a[href="#${section.id}"]`);
-            if (activeLink) {
+            console.log(activeSection.value);
+            if (activeSection.value != 'carousel') {
               const linkRect = activeLink.getBoundingClientRect();
               underlineStyle.value = {
                 width: `${linkRect.width}px`,
                 left: `${linkRect.left}px`
+              };
+            }else {
+              underlineStyle.value = {
+               display: 'none',
               };
             }
           
